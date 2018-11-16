@@ -1,11 +1,13 @@
-
-/*  BST312.h
-  CS 312 Fall 2018
-
-  a simple implementation of a binary search tree
-
-
-*/
+// BST312.h
+//
+// On my honor, this programming project is my own work and I have not
+// provided this code to any other student.
+//
+// Troy Jackson
+//
+// taj777
+//
+// Section 5 digit ID: 16240
 
 #ifndef BST_312_H
 #define BST_312_H
