@@ -63,7 +63,7 @@ Function: Adds newItem to the BST.
 Preconditions: BST has been initialized and is not full.
 Postconditions: newItem is in the proper position for a BST.
 *****************************/
-    void insertItem(const ItemType &);
+    void insertItem(const ItemType &);//
 
 /****************************
 deleteItem
@@ -81,7 +81,7 @@ Function: Counts the number of nodes in the BST
 Preconditions: BST has been initialized.
 Postconditions: returns the number of nodes in the BST
 *****************************/
-    int countNodes();
+    int countNodes();//
 
 /****************************
 preOrderTraversal
@@ -90,7 +90,7 @@ Function: Returns the preOder (Node, Left, Right) as a vector of ItemTypes
 Preconditions: BST has been initialized.
 Postconditions: none
 *****************************/
-    vector<ItemType> preOrderTraversal();
+    vector<ItemType> preOrderTraversal();//
 
 /****************************
 inOrderTraversal
@@ -99,7 +99,7 @@ Function: Returns the inOder (Left, Node, Right) as a vector of ItemTypes
 Preconditions: BST has been initialized.
 Postconditions: none
 *****************************/
-    vector<ItemType> inOrderTraversal();
+    vector<ItemType> inOrderTraversal();//
 
 /****************************
 postOrderTraversal
@@ -108,7 +108,7 @@ Function: returns the postOder (Left, Right, Node) as a vector of ItemTypes
 Preconditions: BST has been initialized.
 Postconditions: none
 *****************************/
-    vector<ItemType> postOrderTraversal();
+    vector<ItemType> postOrderTraversal();//
 
 /********************
  isItemInTree
@@ -118,7 +118,7 @@ Preconditions: BST has been initialized.
 Postconditions: none
 *****************************/
 
-    bool isItemInTree(const ItemType& item);
+    bool isItemInTree(const ItemType& item);//
 
 
 private:
@@ -131,15 +131,15 @@ private:
     TreeNode * root;
 
 
-    void insertItem(TreeNode*& t, const ItemType& newItem);
-    void inOrderTraversal(TreeNode* t,vector<ItemType>& result) const;
-    int countNodes(TreeNode* t) const;
+    void insertItem(TreeNode*& t, const ItemType& newItem);//
+    void inOrderTraversal(TreeNode* t,vector<ItemType>& result) const;//
+    int countNodes(TreeNode* t) const;//
     void deleteNode(TreeNode*& node);
-    void makeEmpty(TreeNode*& t);
+    void makeEmpty(TreeNode*& t);//
     void deleteItem(TreeNode*& t, const ItemType& newItem);
     void getPredecessor(TreeNode* t, ItemType& data);
-    void preOrderTraversal(TreeNode* t,vector<ItemType>& result) const;
-    void postOrderTraversal(TreeNode* t,vector<ItemType>& result) const;
+    void preOrderTraversal(TreeNode* t,vector<ItemType>& result) const;//
+    void postOrderTraversal(TreeNode* t,vector<ItemType>& result) const;//
     void copyTree(TreeNode*& copy, const TreeNode *originalTree);
 
 };
